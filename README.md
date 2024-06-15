@@ -5,3 +5,8 @@ SHORTHAND PARA IMPRIMIR UNA VARIABLE EN PHP UNICA DENTRO DEL HTML
 <?= $variable?;>
 VER LOS ERRORES DE PHP USANDO APACHE LINUX
 tail -f /var/log/apache2/error.log
+//SI EL VALOR QUE ESTA A LA IZQUIERDA DEL OPERADOR "??" PASARA A TOMAR EL VALOR DE LA DERECHA
+$color = "red";
+$color2 = null;
+echo $color . "</br>"; //RED
+echo $color2 ?? $color; //RED
