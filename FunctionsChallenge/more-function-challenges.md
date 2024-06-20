@@ -10,16 +10,16 @@ There is an easy version and a version that is slightly harder. Try them both.
 
 ## Easy
 
-  - Create a named function called `fahrenheitToCelsius` that takes a fahrenheit temperature as an argument. 
-  - Return the temperature converted to Celsius.
-  - Print to the screen like "68F = 20C. You can use the &deg; entity for the degrees symbol.
-  - For extra points, convert to an arrow function
+- Create a named function called `fahrenheitToCelsius` that takes a fahrenheit temperature as an argument.
+- Return the temperature converted to Celsius.
+- Print to the screen like "68F = 20C. You can use the &deg; entity for the degrees symbol.
+- For extra points, convert to an arrow function
 
 ## Harder
-  - Create a variable in the global scope to hold the base temp of 32.
-  - Create an anonymous function/closure that takes in a temp to convert and uses that base variable from the outer scope to calculate it to celsius
-  - Print to screen
 
+- Create a variable in the global scope to hold the base temp of 32.
+- Create an anonymous function/closure that takes in a temp to convert and uses that base variable from the outer scope to calculate it to celsius
+- Print to screen
 
 ### Hints
 
