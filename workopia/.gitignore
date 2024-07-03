@@ -1,0 +1,6 @@
+/vendor
+/node_modules
+/condig/db.php
+.env
+.vscode
+.DS_STORE
