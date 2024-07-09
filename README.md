@@ -10,3 +10,5 @@ $color = "red";
 $color2 = null;
 echo $color . "</br>"; //RED
 echo $color2 ?? $color; //RED
+SET DOCUMENT ROOT TO SPECIFIC FILE 
+php -S localhost:8010 -t public

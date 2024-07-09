@@ -9,3 +9,48 @@ function basePath($path = '')
 {
     return __DIR__ . '/' . $path;
 }
+/**
+ * LOAD A VIEW 
+ * @param string $name
+ * @return void
+ */
+function loadView($name)
+{
+    $viewPath =  basePath("views/{$name}.view.php");
+    if (file_exists($viewPath)) {
+        require $viewPath;
+    } else {
+        echo "View '{$viewPath}' NOT FOUND";
+    }
+}
+function loadPartial($name)
+{
+    $partialPath =  basePath("views/partials/{$name}.php");
+    if (file_exists($partialPath)) {
+        require $partialPath;
+    } else {
+        echo "Partial '{$partialPath}' NOT FOUND";
+    }
+}
+/**
+ * INSPECT A VALUE
+ * @param mixed $value
+ * @return void
+ */
+function inspect($value)
+{
+    echo '<pre>';
+    var_dump($value);
+    echo '</pre>';
+}
+/**
+ * INSPECT A VALUE AND STOP THE SCRIPT 
+ * @param mixed $value
+ * @return void
+ */
+function inspectAndDie($value)
+{
+    echo '<pre>';
+    die(var_dump($value));
+    echo '</pre>';
+}
